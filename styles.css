@@ -1,0 +1,70 @@
+/* styles.css */
+
+/*'normalizing' style*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+  }
+  
+  h1 {
+    background-color: lightcoral;
+    color: darkblue;
+    text-align: center;
+  }
+  
+  /*id selectors target individual elements,
+  but class selectors can be used to apply the same
+  set of rules to multiple elements*/
+  
+  .special-text {
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+    font-weight: bolder;
+  }
+  
+  #container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden; /*Clearfix for the floats*/
+  }  
+  
+  
+  #task-creator, #task-list {
+    width: 45%;
+    padding: 2.5%;
+    float: left;
+  }
+  
+  
+  #todo-form {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  #todo-input {
+    padding: 10px;
+    width: 80%;
+    margin-right: 10px;
+  }
+  
+  #todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+  }
+  
+  #todo-list li {
+    /*selects all li elements that are descendants of
+    the element with an id of todo-list*/
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+  }

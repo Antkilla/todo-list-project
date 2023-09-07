@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> My Sample Web Page Title</title>
- 
- </head>
-  <body>
-
-
-  </body>
+<head>
+    <!--This is an HTML Comment-->  
+    <!--The head is for linking to other files, metadata, and
+    other information your site needs to function but that does
+    not show up on the page itself-->
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!--All actual content to be displayed on the page is
+    contained inside of the body-->
+    <div id="container">
+        <div id="task-creator">
+            <h1>Add a Task</h1>
+            <form id="todo-form">
+                <input id="todo-input" type="text" placeholder="Type your task here">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div id="task-list">
+            <h1 class="special-text">Your Tasks</h1>
+            <ul id="todo-list">
+              <li class="special-text">Sample Task</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
-
